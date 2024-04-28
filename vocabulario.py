@@ -21,7 +21,8 @@ html_tag_regex = "<(?:\"[^\"]*\"['\"]*|'[^']*'['\"]*|[^'\">])+>"
 control_characters_regex = "[\x00-\x1F\x7F]"
 
 def main():
-  with open("PH_train.csv", "r") as file:
+  filename = input("Enter the name of the file: ")
+  with open(filename, "r") as file:
     texto = file.read()
   texto = texto.replace("\n", " ")
   texto = texto.lower()
@@ -30,7 +31,6 @@ def main():
   emails = {}
   number = 0
   email = ""
-  #Eliminar los tres primeros campos
   fields = fields[3:]
   for i in range(len(fields)):
     if actualField == 0:
@@ -69,10 +69,12 @@ def main():
     print("Se procesó el correo " + key + " de " + str(len(emails)) + " correos.")
   stemmer = PorterStemmer()
   words = [stemmer.stem(w) for w in words]
+  words.append("<UNK>")
   words = list(set(words))
   words.sort()
-  with open("vocabulario.txt", "w") as file:
-    file.write("Numero de palabras: " + str(len(words)) + "\n")
+  filename = input("Enter the name of the file to save the vocabulary: ")
+  with open(filename, "w") as file:
+    file.write("Numero de palabras: " + str(len(words)))
     for word in words:
       file.write(word + "\n")
   print("Created vocabulario.txt file.")
