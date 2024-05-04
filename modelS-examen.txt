@@ -1,0 +1,15 @@
+Numero de documentos del corpus: 4
+Numero de palabras del corpus: 12
+Palabra: <UNK> Frec: 0 LogProb: -3.2188758248682006
+Palabra: connect Frec: 2 LogProb: -2.120263536200091
+Palabra: critic Frec: 1 LogProb: -2.5257286443082556
+Palabra: error Frec: 2 LogProb: -2.120263536200091
+Palabra: failur Frec: 1 LogProb: -2.5257286443082556
+Palabra: immedi Frec: 2 LogProb: -2.120263536200091
+Palabra: inquiri Frec: 0 LogProb: -3.2188758248682006
+Palabra: intermitt Frec: 0 LogProb: -3.2188758248682006
+Palabra: restart Frec: 1 LogProb: -2.5257286443082556
+Palabra: schedul Frec: 0 LogProb: -3.2188758248682006
+Palabra: server Frec: 2 LogProb: -2.120263536200091
+Palabra: slow Frec: 0 LogProb: -3.2188758248682006
+Palabra: urgent Frec: 1 LogProb: -2.5257286443082556

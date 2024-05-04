@@ -1,0 +1,4 @@
+1;critical error server;safe email;
+2;urgent server restart;safe email;
+3;connection failure immediate;safe email;
+4;connection error immediate;safe email;

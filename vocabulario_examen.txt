@@ -1,0 +1,14 @@
+Numero de palabras: 13
+<UNK>
+connect
+critic
+error
+failur
+immedi
+inquiri
+intermitt
+restart
+schedul
+server
+slow
+urgent

@@ -1,0 +1,4 @@
+5;slow server inquiry;phishing email;
+6;scheduled server restart;phishing email;
+7;intermittent connection failure;phishing email;
+8;scheduled connection restart;phishing email;

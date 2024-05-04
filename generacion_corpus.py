@@ -24,9 +24,9 @@ def main():
   filename = input("Enter the name of the file from where you want to generate the corpus: ")
   with open(filename, "r") as file:
     texto = file.read()
-  texto = texto.replace("\n", " ")
+  #texto = texto.replace("\n", " ")
   texto = texto.lower()
-  fields = texto.split(";")
+  fields = texto.split("\n")
   header = input("The file has a header? (y,n): ")
   if header == "y":
     fields = fields[3:]
@@ -47,6 +47,7 @@ def main():
       actualField = 0
   translate_table = dict((ord(char), ' ') for char in string.punctuation)
   for key in emails:
+    print(emails[key][0].translate(translate_table))
     emails[key][0] = emails[key][0].translate(translate_table)
   stop_words = [process_text(w)[0] for w in stopwords.words('english')]
   email = ""

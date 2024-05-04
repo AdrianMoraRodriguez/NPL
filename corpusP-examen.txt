@@ -1,0 +1,4 @@
+slow server inquiri 
+schedul server restart 
+intermitt connect failur 
+schedul connect restart 

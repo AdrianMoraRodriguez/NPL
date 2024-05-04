@@ -12,8 +12,6 @@ def calcular_porcentaje(dataBase, classification):
     elif actualField == 2:
       actualRealClasification.append(dataBase[i])
       actualField = 0
-  print("Number of emails to classify: " + str(len(classification)) + "\n")
-  print("Number of emails classified: " + str(len(actualRealClasification)) + "\n")
   for i in range(len(classification) - 2):
     if actualRealClasification[i][0].lower() == classification[i].lower():
       hits += 1

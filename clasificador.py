@@ -92,10 +92,14 @@ def main():
     word = line[1].split(" ")[1]
     prob = float(line[-1])
     wordProbSafe[word] = prob
-  corpus = input("Enter the corpus to classify: ")
-  with open(corpus, "r") as file:
+  corpusName = input("Enter the corpus to classify: ")
+  with open(corpusName, "r") as file:
     corpus = file.read()
-  corpus = preprocessCorpus(corpus)
+  preprocess = input("Do you want to preprocess the corpus? (y/n): ")
+  if preprocess == "y":
+    corpus = preprocessCorpus(corpus)
+  else:
+    corpus = corpus.split("\n")
   print("Number of emails to classify: " + str(len(corpus)))
   classificationOfEmails = []
   contador = 1

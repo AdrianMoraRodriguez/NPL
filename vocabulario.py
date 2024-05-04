@@ -74,7 +74,7 @@ def main():
   words.sort()
   filename = input("Enter the name of the file to save the vocabulary: ")
   with open(filename, "w") as file:
-    file.write("Numero de palabras: " + str(len(words)))
+    file.write("Numero de palabras: " + str(len(words)) + "\n")
     for word in words:
       file.write(word + "\n")
   print("Created vocabulario.txt file.")
